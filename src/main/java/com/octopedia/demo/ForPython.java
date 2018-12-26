@@ -13,7 +13,7 @@ public class ForPython {
     public String answer(String que){
         String answer = "";
         try{
-            String[] args = new String[] {"python","D:\\Chatbot\\NLP.py",que};
+            String[] args = new String[] {"python","NLP.py",que};
             Process proc = Runtime.getRuntime().exec(args);
             BufferedReader in = new BufferedReader(new InputStreamReader(proc.getInputStream()));
             String line = null;
